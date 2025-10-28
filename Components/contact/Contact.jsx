@@ -9,13 +9,13 @@ function Contact() {
         <div className="contact-info">
           <h3>Contact Information</h3>
           <div className="contact-item">
-            <strong>Email:</strong> your.email@utoronto.ca
+            <strong>Email:</strong> peter.leong@mail.utoronto.ca
           </div>
           <div className="contact-item">
-            <strong>LinkedIn:</strong> linkedin.com/in/yourprofile
+            <strong>LinkedIn:</strong> linkedin.com/in/peter-leong-toronto
           </div>
           <div className="contact-item">
-            <strong>GitHub:</strong> github.com/yourusername
+            <strong>GitHub:</strong> github.com/PeterL-Engineering
           </div>
         </div>
         

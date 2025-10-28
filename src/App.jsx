@@ -4,7 +4,8 @@ import Homepage from '../components/homepage/Homepage'
 import About from '../components/about/About'
 import Experience from '../components/experience/Experience'
 import Projects from '../components/projects/Projects'
-import Contact from '../components/contact/Contact'
+// import Contact from '../components/contact/Contact'
+import Copyright from '../components/copyright/Copyright'
 import './App.css'
 
 function App() {
@@ -24,8 +25,11 @@ function App() {
         <section id="experience">
           <Experience />
         </section>
-        <section id="contact">
+        {/* <section id="contact">
           <Contact />
+        </section> */}
+        <section id="copyright">
+          <Copyright />
         </section>
       </main>
     </div>

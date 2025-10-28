@@ -11,7 +11,10 @@
   margin-bottom: 50px;
   border-bottom: 2px solid #667eea;
   padding-bottom: 15px;
-  display: inline-block;
+  display: inline-block; /* Keep this */
+  /* Add these to center the element */
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .contact-content {

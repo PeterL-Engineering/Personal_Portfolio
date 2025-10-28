@@ -2,21 +2,38 @@ import React from 'react'
 import './Navigation.css'
 
 function Navigation() {
-  const smoothScroll = (targetId) => {
+  const smoothScrollTo = (targetId) => {
     const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset - 70; // Adjust for navbar height
-      
-      window.scrollTo({
-        top: offsetTop,
-        behavior: 'smooth'
-      });
+    if (!targetElement) return;
+
+    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition - 70; // Adjust for navbar
+    const duration = 900; // CHANGED: 800ms for faster, 1200ms for slower
+    let startTime = null;
+
+    function animation(currentTime) {
+      if (startTime === null) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const run = easeInOutQuad(timeElapsed, startPosition, distance, duration);
+      window.scrollTo(0, run);
+      if (timeElapsed < duration) requestAnimationFrame(animation);
     }
+
+    // Easing function for smooth acceleration and deceleration
+    function easeInOutQuad(t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return c / 2 * t * t + b;
+      t--;
+      return -c / 2 * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(animation);
   };
 
   const handleNavClick = (e, targetId) => {
     e.preventDefault();
-    smoothScroll(targetId);
+    smoothScrollTo(targetId);
   };
 
   return (
@@ -37,9 +54,6 @@ function Navigation() {
           </li>
           <li className="nav-item">
             <a href="#experience" className="nav-link" onClick={(e) => handleNavClick(e, 'experience')}>Experience</a>
-          </li>
-          <li className="nav-item">
-            <a href="#contact" className="nav-link" onClick={(e) => handleNavClick(e, 'contact')}>Contact</a>
           </li>
         </ul>
       </div>

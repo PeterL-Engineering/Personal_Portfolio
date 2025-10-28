@@ -17,17 +17,17 @@ function About() {
             <div className="about-text">
               <h2 className="about-heading">About Me</h2>
               <p>
-                Hello! I'm Peter Leong, an Engineering Science ECE student at the University of Toronto 
-                with a passion for technology, innovation, and music.
+                Hello! I'm Peter Leong, an Engineering Science student at the University of Toronto
+                specializing in Electrical and Computer Engineering. I'm particularly interested in
+                digital systems design, and computer architecture.
               </p>
               <p>
-                When I'm not coding or studying engineering principles, you can find me at the organ, 
-                where I explore the intersection of technology and music through one of the most 
-                complex mechanical instruments ever created.
+                From my roles as a Tech Team Associate with the University of Toronto IEEE Student Branch, 
+                I have obtained practical experience with CAD tools and PCB design.
               </p>
               <p>
-                I believe that great engineering, like great music, requires both technical precision 
-                and creative expression.
+                Beyond engineering, I enjoy spending my time with music. I possess an ARCT in Piano and Organ Performance
+                and have been awarded the National Gold Medal twice. 
               </p>
             </div>
           </div>

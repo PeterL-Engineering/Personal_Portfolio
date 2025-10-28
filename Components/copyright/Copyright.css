@@ -1,0 +1,20 @@
+/* Copyright.css */
+.copyright-footer {
+  background: #111111;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: auto; /* Important for sticking to bottom */
+}
+
+.copyright-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.copyright-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #cccccc;
+}
