@@ -117,14 +117,172 @@
   }
 }
 
-/* Hover effects */
-.headshot:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
+/* Add these to your existing About.css */
+
+/* Slide In Animations */
+.slide-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
 }
 
-.organ-image:hover {
-  transform: translateY(-5px);
-  transition: transform 0.3s ease;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+.slide-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Different animation directions */
+.slide-in.up {
+  transform: translateY(50px);
+}
+
+.slide-in.down {
+  transform: translateY(-50px);
+}
+
+.slide-in.left {
+  transform: translateX(50px);
+}
+
+.slide-in.right {
+  transform: translateX(-50px);
+}
+
+.slide-in.visible.up,
+.slide-in.visible.down {
+  transform: translateY(0);
+}
+
+.slide-in.visible.left,
+.slide-in.visible.right {
+  transform: translateX(0);
+}
+
+/* Scale animation */
+.slide-in.scale {
+  transform: scale(0.9);
+}
+
+.slide-in.visible.scale {
+  transform: scale(1);
+}
+
+/* Your existing CSS remains the same */
+.about-section {
+  background-color: #111111;
+  padding: 80px 20px;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.about-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.headshot-container {
+  text-align: center;
+}
+
+.headshot {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #667eea;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.about-text {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 15px;
+  border-left: 4px solid #667eea;
+}
+
+.about-heading {
+  color: #667eea;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-text p {
+  color: #cccccc;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+.about-right {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.organ-image-container {
+  position: relative;
+  max-width: 400px;
+}
+
+.organ-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  border: 2px solid #333;
+}
+
+.image-caption {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #667eea;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .about-section {
+    padding: 60px 20px;
+  }
+  
+  .organ-image-container {
+    max-width: 300px;
+  }
+  
+  .about-heading {
+    font-size: 1.8rem;
+  }
 }

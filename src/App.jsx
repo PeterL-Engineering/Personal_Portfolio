@@ -2,7 +2,7 @@ import React from 'react'
 import Navigation from '../components/navigation/Navigation'
 import Homepage from '../components/homepage/Homepage'
 import About from '../components/about/About'
-import Experience from '../components/experience/Experience'
+import Education_Experience from '../components/education-experience/Education-Experience'
 import Projects from '../components/projects/Projects'
 // import Contact from '../components/contact/Contact'
 import Copyright from '../components/copyright/Copyright'
@@ -23,7 +23,7 @@ function App() {
           <Projects />
         </section>
         <section id="experience">
-          <Experience />
+          <Education_Experience />
         </section>
         {/* <section id="contact">
           <Contact />
