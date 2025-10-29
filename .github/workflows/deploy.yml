@@ -3,6 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   build-and-deploy:
@@ -18,10 +20,11 @@ jobs:
         node-version: '18'
         cache: 'npm'
         
-    - name: Install Vite and dependencies
-      run: |
-        npm install
-        npx vite --version
+    - name: Install dependencies
+      run: npm install
+      
+    - name: Fix permissions (if needed)
+      run: npx vite --version
       
     - name: Build project
       run: npx vite build
@@ -37,3 +40,4 @@ jobs:
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v2
+      if: github.ref == 'refs/heads/main' && github.event_name == 'push'
