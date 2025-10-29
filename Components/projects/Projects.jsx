@@ -9,11 +9,10 @@ function Projects() {
       title: "LoRa-WiFi Bridge System",
       period: "Oct. 2025 - Present",
       description: "Hybrid communication node using ESP32 microcontrollers with intelligent protocol switching between LoRa and WiFi.",
-      technologies: ["C++", "Python", "ESP32", "LoRa", "WiFi Mesh"],
+      technologies: ["C++", "Python", "ESP32", "LoRa", "CAD Tools"],
       highlights: [
-        "Designing hybrid communication node using ESP32 microcontrollers with intelligent protocol switching between LoRa and WiFi",
-        "Implementing mesh networking algorithms for automatic routing",
-        "Developing system to maintain LoRa mesh for text messaging while enabling WiFi ESP-Mesh for image/file transfer when nodes are in proximity"
+        "Designing hybrid communication node using ESP32 microcontrollers with intelligent protocol switching between LoRa and WiFi based on power requirements and data throughput needs",
+        "Developing low-power system utilizing LoRa for energy-efficient text messaging, activating WiFi only for high-speed transfers to minimize overall power consumption"
       ],
       githubLink: null,
       reportLink: null,
@@ -22,11 +21,12 @@ function Projects() {
     {
       title: "Neurosignal Filtration", 
       period: "Sept. 2025 - Present",
-      description: "Digital signal processing system for filtering ocular and muscular artefacts from neurosignal data.",
-      technologies: ["Python", "Numpy", "SystemVerilog"],
+      description: "Digital signal processing system for filtering artifacts from neurosignal data.",
+      technologies: ["Python", "SystemVerilog", "CAD Tools"],
       highlights: [
-        "Developed Runge-Kutta solver and noise generator in Python to mimic ocular and muscular artefacts in real-world neurosignal data",
-        "Designed and implemented Verilog modules for digital signal processing filters with adaptive threshold and spike detection"
+        "Implemented Runge-Kutta solver and noise generator in Python to simulate artifacts in neurosignal data",
+        "Designed and implemented SystemVerilog modules for digital signal processing filters with adaptive threshold and spike detection",
+        "Developed interface protocols to connect with analog front-end circuitry using CAD Tools"
       ],
       githubLink: null,
       reportLink: null,
@@ -36,11 +36,10 @@ function Projects() {
       title: "Image Colourization via CNNs",
       period: "May 2025 - Aug. 2025",
       description: "Automated image colourization system using convolutional neural networks for grayscale images.",
-      technologies: ["Python", "PyTorch", "TensorFlow", "Deep Learning"],
+      technologies: ["Python", "PyTorch", "TensorFlow"],
       highlights: [
-        "Developed and implemented automated image colourization for 256×256 grayscale images using a dataset of 12,600 pairs (people, animals, natural scenery)",
-        "Framed the task as supervised learning in the CIELAB colour space",
-        "Built CNN models progressing from shallow baseline to deep encoder–decoder architecture capturing semantic and spatial features"
+        "Implemented automated colourization of 256×256 grayscale images using Python and CNN architectures",
+        "Built encoder-decoder models in PyTorch and TensorFlow, achieving accurate colour reconstruction in CIELAB space"
       ],
       githubLink: null,
       reportLink: finalReport,
@@ -51,7 +50,7 @@ function Projects() {
   return (
     <section className="projects-section" id="projects">
       <SlideIn direction="down" delay="100">
-        <h2 className="projects-heading">Project Experience</h2>
+        <h2 className="projects-heading">Projects</h2>
       </SlideIn>
       
       <div className="projects-container">

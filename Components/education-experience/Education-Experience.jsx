@@ -8,7 +8,6 @@ function Experience() {
       title: "Tech Team Associate",
       company: "IEEE University of Toronto Student Branch",
       period: "Jun. 2025 – Present",
-      description: "Technical leadership role in student engineering organization.",
       technologies: ["Git", "CAD", "Workshop Leadership", "Event Management"],
       achievements: [
         "Led workshops on Git, algorithms, and CAD while managing hardware inventory for events including NewHacks and MakeUofT"
@@ -16,9 +15,8 @@ function Experience() {
     },
     {
       title: "Electrical Systems Member", 
-      company: "University of Toronto Human Powered Vehicles Design Team (HPVDT)",
+      company: "University of Toronto Human Powered Vehicles Design Team",
       period: "Jan. 2025 – Aug. 2025",
-      description: "Control systems development for human-powered watercraft.",
       technologies: ["C", "PID Control", "Embedded Systems", "Orientation Tracking"],
       achievements: [
         "Developed a PID controller in C as part of HPVDT's control systems division",
@@ -27,9 +25,8 @@ function Experience() {
     },
     {
       title: "Frosh Week Head Leader",
-      company: "University of Toronto Engineering, Toronto, ON",
+      company: "University of Toronto Engineering",
       period: "July 2025 - Sept. 2025",
-      description: "Leadership role in student orientation program.",
       technologies: ["Team Leadership", "Event Planning", "Student Mentorship"],
       achievements: [
         "Led a team of ~20 orientation leaders to welcome and guide 50+ incoming engineering students through Frosh Week activities",
@@ -42,7 +39,6 @@ function Experience() {
     title: "Bachelor of Applied Science in Engineering Science",
     company: "University of Toronto",
     period: "Sept. 2024 - June 2029",
-    location: "Toronto, ON",
     description: "Electrical & Computer Engineering Major",
     technologies: ["Electrical Engineering", "Computer Engineering", "Artificial Intelligence", "Machine Learning"],
     achievements: [
@@ -67,10 +63,6 @@ function Experience() {
               <span className="experience-company">{education.company}</span>
               <span className="experience-period">{education.period}</span>
             </div>
-          </div>
-          
-          <div className="experience-location">
-            <span className="location-text">{education.location}</span>
           </div>
           
           <p className="experience-description">{education.description}</p>
@@ -113,8 +105,6 @@ function Experience() {
                   <span className="experience-period">{experience.period}</span>
                 </div>
               </div>
-              
-              <p className="experience-description">{experience.description}</p>
               
               <div className="experience-technologies">
                 <h4>Skills & Technologies:</h4>

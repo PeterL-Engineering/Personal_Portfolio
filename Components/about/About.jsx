@@ -29,12 +29,8 @@ function About() {
                   digital systems design, and computer architecture.
                 </p>
                 <p>
-                  From my roles as a Tech Team Associate with the University of Toronto IEEE Student Branch, 
-                  I have obtained practical experience with CAD tools and PCB design.
-                </p>
-                <p>
                   Beyond engineering, I enjoy spending my time with music. I possess an ARCT in Piano and Organ Performance
-                  and have been awarded the National Gold Medal twice. 
+                  and have been awarded the National Gold Medal by the Royal Conservatory of Music twice. 
                 </p>
               </div>
             </SlideIn>
