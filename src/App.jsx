@@ -1,11 +1,11 @@
 import React from 'react'
-import Navigation from '../components/navigation/Navigation'
-import Homepage from '../components/homepage/Homepage'
+import Navigation from '../components/navigation/Navigation.jsx'
+import Homepage from '../components/homepage/Homepage.jsx'
 import About from '../components/about/About'
-import Education_Experience from '../components/education-experience/Education-Experience'
-import Projects from '../components/projects/Projects'
+import Education_Experience from '../components/education-experience/Education-Experience.jsx'
+import Projects from '../components/projects/Projects.jsx'
 // import Contact from '../components/contact/Contact'
-import Copyright from '../components/copyright/Copyright'
+import Copyright from '../components/copyright/Copyright.jsx'
 import './App.css'
 
 function App() {
