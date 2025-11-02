@@ -1,6 +1,8 @@
 import React from 'react'
 import './About.css'
 import SlideIn from './SlideIn'
+import headshot from '/src/figs/peter_leong_headshot.png'  // Relative path
+import organImage from '/src/figs/peter_st_basil_organ.jpg'  // Import organ image too
 
 function About() {
   return (
@@ -8,18 +10,16 @@ function About() {
       <div className="about-container">
         <div className="about-content">
           <div className="about-left">
-            {/* Headshot with slide-in animation */}
             <SlideIn direction="up" delay="100">
               <div className="headshot-container">
                 <img 
-                  src="/src/figs/peter_leong_headshot.png" 
+                  src={headshot}
                   alt="Headshot" 
                   className="headshot"
                 />
               </div>
             </SlideIn>
 
-            {/* About text with slide-in animation */}
             <SlideIn direction="up" delay="200">
               <div className="about-text">
                 <h2 className="about-heading">About Me</h2>
@@ -37,11 +37,10 @@ function About() {
           </div>
           
           <div className="about-right">
-            {/* Organ image with slide-in animation */}
             <SlideIn direction="left" delay="300">
               <div className="organ-image-container">
                 <img 
-                  src="/src/figs/peter_st_basil_organ.jpg" 
+                  src={organImage} 
                   alt="Playing organ" 
                   className="organ-image"
                 />
